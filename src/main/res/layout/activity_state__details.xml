@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".State_Details">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="85sp"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/dc_CountryFlagIv"
+            android:layout_width="140sp"
+            android:layout_height="110sp"
+            android:contentDescription="@string/country_flag_image"
+            android:padding="5sp" />
+
+
+        <TextView
+            android:id="@+id/dc_CountryNameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:layout_toEndOf="@id/dc_CountryFlagIv"
+            android:text="@string/country_name"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#239AE3"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dc_LastUpdated_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dc_CountryNameTv"
+            android:layout_margin="5sp"
+            android:layout_toEndOf="@id/dc_CountryFlagIv"
+            android:text="@string/last_updated"
+            android:textAlignment="center"
+            android:textSize="12sp" />
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/chart_types_layout" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:id="@+id/StateChartProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/StateDetailBarChart"
+            android:layout_width="match_parent"
+            android:layout_height="300sp" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="WebViewLayout">
+
+            <ProgressBar
+                android:id="@+id/DetailCardViewProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="visible" />
+
+
+            <include
+                android:id="@+id/Country_Detail_data"
+                layout="@layout/detail_country_case_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp" />
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

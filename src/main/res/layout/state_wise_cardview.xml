@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="130sp"
+    android:layout_margin="6sp"
+    android:elevation="8sp"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="12sp"
+    app:cardElevation="@dimen/activity_vertical_margin">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/StateNameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:text="@string/state_name"
+            android:textAlignment="textStart"
+            android:textAllCaps="true"
+            android:textIsSelectable="true"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <RelativeLayout
+            android:id="@+id/DataRL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/StateNameTv">
+
+
+            <TextView
+                android:id="@+id/CasesTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="3sp"
+                android:text="@string/cases"
+                android:textAlignment="center"
+                android:textColor="#050505"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/CasesCountTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="46sp"
+                android:layout_marginTop="3sp"
+                android:layout_toEndOf="@id/CasesTv"
+                android:text="@string/_999999"
+                android:textAlignment="center"
+                android:textColor="#AAAAAA"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ActiveTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/CasesTv"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="4sp"
+                android:text="@string/active"
+                android:textAlignment="center"
+                android:textColor="#050505"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/ActiveCountTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/CasesCountTv"
+                android:layout_marginStart="53sp"
+                android:layout_marginTop="4sp"
+                android:layout_toEndOf="@id/ActiveTv"
+                android:text="@string/_999999"
+                android:textAlignment="center"
+                android:textColor="#F36A04"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/RecoveredTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ActiveTv"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="4sp"
+                android:text="@string/recovered"
+                android:textAlignment="center"
+                android:textColor="#050505"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/RecoveredCountTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ActiveCountTv"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="4sp"
+                android:layout_toEndOf="@id/RecoveredTv"
+                android:text="@string/_999999"
+                android:textAlignment="center"
+                android:textColor="#8AcA2B"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/DeathsTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/RecoveredTv"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="4sp"
+                android:text="@string/deaths"
+                android:textAlignment="center"
+                android:textColor="#050505"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/DeathsCountTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/RecoveredTv"
+                android:layout_marginStart="41sp"
+                android:layout_marginTop="4sp"
+                android:layout_toEndOf="@id/DeathsTv"
+                android:text="@string/_999999"
+                android:textAlignment="center"
+                android:textColor="#FA0000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

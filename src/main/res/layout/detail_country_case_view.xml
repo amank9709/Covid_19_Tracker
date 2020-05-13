@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/DetailCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:elevation="5sp"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardBackgroundColor="#43AFF1"
+    app:cardCornerRadius="12sp"
+    app:cardElevation="8sp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dc_cases"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:paddingStart="12sp"
+            android:text="Cases"
+            android:textAllCaps="true"
+            android:textSize="17sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/dc_Active"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:paddingStart="12sp"
+            android:text="Active"
+            android:textAllCaps="true"
+            android:textSize="17sp"
+            android:textStyle="normal" />
+
+
+        <TextView
+            android:id="@+id/dc_today_cases"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:paddingStart="12sp"
+            android:text="today Cases"
+            android:textAllCaps="true"
+            android:textSize="17sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/dc_Deaths"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:paddingStart="12sp"
+            android:text="Deaths"
+            android:textAllCaps="true"
+            android:textSize="17sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/dc_toady_deaths"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:paddingStart="12sp"
+            android:text="Today Deaths"
+            android:textAllCaps="true"
+            android:textSize="17sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/dc_Recovered"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:paddingStart="12sp"
+            android:text="Recovered"
+            android:textAllCaps="true"
+            android:textSize="17sp"
+            android:textStyle="normal" />
+
+
+        <TextView
+            android:id="@+id/dc_critical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:paddingStart="12sp"
+            android:text="Critical"
+            android:textAllCaps="true"
+            android:textSize="17sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/dc_cases_pom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:paddingStart="12sp"
+            android:text="cases Per One Million"
+            android:textAllCaps="true"
+            android:textSize="17sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/dc_deaths_pom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:paddingStart="12sp"
+            android:text="Deaths Per One Million"
+            android:textAllCaps="true"
+            android:textSize="17sp"
+            android:textStyle="normal" />
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

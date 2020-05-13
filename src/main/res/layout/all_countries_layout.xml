@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="140sp"
+    android:layout_margin="4sp"
+    android:clickable="true"
+    android:elevation="6dp"
+
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="vertical"
+    app:cardCornerRadius="12sp"
+    app:cardElevation="5sp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="140sp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/FlagImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/todo" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/CountryNameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="5sp"
+                android:text="@string/country_name"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/CasesTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/CountryNameTv"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="4sp"
+                android:text="@string/cases"
+                android:textAlignment="center"
+                android:textColor="#050505"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/CasesCountTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/CountryNameTv"
+                android:layout_marginStart="45sp"
+                android:layout_marginTop="4sp"
+                android:layout_toEndOf="@id/CasesTv"
+                android:text="@string/_999999"
+                android:textAlignment="center"
+                android:textColor="#AAAAAA"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/ActiveTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/CasesTv"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="4sp"
+                android:text="Active :"
+                android:textAlignment="center"
+                android:textColor="#050505"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/ActiveCountTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/CasesCountTv"
+                android:layout_marginStart="45sp"
+                android:layout_marginTop="4sp"
+                android:layout_toEndOf="@id/ActiveTv"
+                android:text="@string/_999999"
+                android:textAlignment="center"
+                android:textColor="#AAAAAA"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/RecoveredTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ActiveTv"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="4sp"
+                android:text="@string/recovered"
+                android:textAlignment="center"
+                android:textColor="#050505"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/RecoveredCountTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ActiveCountTv"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="4sp"
+                android:layout_toEndOf="@id/RecoveredTv"
+                android:text="@string/_999999"
+                android:textAlignment="center"
+                android:textColor="#8AcA2B"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/DeathsTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/RecoveredTv"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="4sp"
+                android:text="@string/deaths"
+                android:textAlignment="center"
+                android:textColor="#050505"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/DeathsCountTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/RecoveredTv"
+                android:layout_marginStart="42sp"
+                android:layout_marginTop="4sp"
+                android:layout_toEndOf="@id/DeathsTv"
+                android:text="@string/_999999"
+                android:textAlignment="center"
+                android:textColor="#FA0000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

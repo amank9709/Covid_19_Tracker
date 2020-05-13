@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#31A6EE</item>
+        <item name="colorPrimaryDark">#4F7AF3</item>
+        <item name="colorAccent">#CA9831</item>
+        <item name="android:textColorPrimary">#fff</item>
+    </style>
+
+    <style name="cust_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowTitleStyle">@style/dialog_title_style</item>
+
+    </style>
+
+    <style name="dialog_title_style" parent="android:Widget.TextView">
+        <item name="android:background">#31A6EE</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+    </style>
+
+</resources>

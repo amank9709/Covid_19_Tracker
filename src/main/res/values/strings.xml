@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Covid-19 Tracker</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Countries</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="global_count">GLOBAL COUNT</string>
+    <string name="image_of_flag">Image of Flag</string>
+    <string name="cases">Cases :</string>
+    <string name="recovered">Recovered :</string>
+    <string name="deaths">Deaths :</string>
+    <string name="_999999">999999</string>
+    <string name="todo">Country Flag Image View</string>
+    <string name="country_flag_image">Country Flag Image</string>
+    <string name="country_name">Country Name</string>
+    <string name="last_updated">Last Updated</string>
+    <string name="state_wise_details">State Wise Details :</string>
+    <string name="india_count">India count</string>
+    <string name="india_state_wise_details">India State wise Details :</string>
+    <string name="india_case_count">India Case Count</string>
+    <string name="info">Info</string>
+    <string name="active">Active</string>
+    <string name="state_name">State Name :</string>
+    <string name="helpline_number">Helpline Number</string>
+    <string name="state">state</string>
+
+    <string name="Important"><b><big>   INFORMATION!!!</big></b>
+        \n \n<li> All the information about covid-19 is collected from multiple sources</li>
+        \n \n <li> The data collected from different API sync at different time intervals, So the data displayed may not be accurate at the moment</li>
+        \n \n <li> Chart Data for Some Countries is not available. </li>
+         \n \n <li>  </li>
+    </string>
+    <string name="mixed">MIXED</string>
+    <string name="recoveredd">Recovered</string>
+    <string name="deathss">Deaths</string>
+    <string name="confirmedd">Confirmed</string>
+    <string name="lastupdated">LastUpdated</string>
+    <string name="global_case_count">Global Case Count</string>
+    <string name="spinner_title">Select a Country</string>
+    <string name="HelplineInfo">All Data is gathered from the Ministry of Health Website</string>
+
+
+</resources>
