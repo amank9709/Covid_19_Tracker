@@ -1,5 +1,5 @@
 # Covid_19_Tracker
-Covid-19 Tracker is an Android app to track the corona status of each coountry.
+Covid-19 Tracker is an Android app to track the corona status of each country.
 It show confirmed cases, recovered cases, deaths and active cases Data country wise 
 Show Statistical data chart of each country 
 
